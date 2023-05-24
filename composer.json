@@ -1,0 +1,46 @@
+{
+    "name": "sheadawson/silverstripe-zenvalidator",
+    "type": "silverstripe-vendormodule",
+    "description": "Faster, easier client and server-side form validation for SilverStripe",
+    "keywords": [
+        "silverstripe",
+        "parsley",
+        "forms",
+        "validation"
+    ],
+    "license": "BSD License",
+    "authors": [{
+            "name": "Shea Dawson",
+            "email": "shea@silverstripe.com.au"
+        },
+        {
+            "name": "LeKoala",
+            "email": "thomas@lekoala.be"
+        }
+    ],
+    "require": {
+        "silverstripe/framework": "^4"
+    },
+    "require-dev": {
+        "silverstripe/vendor-plugin": "^1.0",
+        "phpunit/phpunit": "^5.7"
+    },
+    "support": {
+        "issues": "https://github.com/sheadawson/silverstripe-zenvalidator/issues"
+    },
+    "extra": {
+        "installer-name": "zenvalidator",
+        "expose": [
+            "css",
+            "javascript"
+        ]
+    },
+    "scripts": {
+        "lint": "phpcs code/ tests/",
+        "lint-clean": "phpcbf code/ tests/",
+        "test": "phpunit -v"
+    },
+    "homepage": "https://github.com/sheadawson/silverstripe-zenvalidator",
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

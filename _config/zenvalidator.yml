@@ -1,0 +1,20 @@
+---
+Name: zenvalidator
+---
+ZenValidator:
+  default_js: true
+  avoid_entwine: true
+ValidationLogicCriteria:
+  comparisons:
+    isEqualTo: "=="
+    isEmpty: ""
+    isGreaterThan: ">"
+    isLessThan: "<"
+    contains: ""
+    isChecked: ""
+    hasCheckedOption: ""
+    hasCheckedAtLeast: ""
+    hasCheckedLessThan: ""
+SilverStripe\Forms\FormField:
+  extensions:
+    - ZenValidatorFormFieldExtension
